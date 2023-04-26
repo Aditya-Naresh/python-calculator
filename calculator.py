@@ -41,7 +41,7 @@ def equal_button_action():
     input_value = ""
 
 
-# Create a frame for the display field
+# A frame for the display field
 input_frame = tk.Frame(win, width=312, height=50, bd=0, highlightbackground="black", highlightcolor="black",
                        highlightthickness=2)
 input_frame.pack(side=tk.TOP)
@@ -51,5 +51,9 @@ input_field = tk.Entry(input_frame, font=('arial', 18, 'bold'), textvariable=dis
                        justify=tk.RIGHT)
 input_field.grid(row=0, column=0)
 input_field.pack(ipady=10)
+
+# Frame for buttons
+button_frame = tk.Frame(win, width=312, height=272.5, bg="grey")
+button_frame.pack()
 
 win.mainloop()
