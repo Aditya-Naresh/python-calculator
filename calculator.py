@@ -39,3 +39,17 @@ def equal_button_action():
     result = str(eval(input_value))
     display_text.set(result)
     input_value = ""
+
+
+# Create a frame for the display field
+input_frame = tk.Frame(win, width=312, height=50, bd=0, highlightbackground="black", highlightcolor="black",
+                       highlightthickness=2)
+input_frame.pack(side=tk.TOP)
+
+# Entry Widget inside the frame
+input_field = tk.Entry(input_frame, font=('arial', 18, 'bold'), textvariable=display_text, width=50, bg='#eee', bd=0,
+                       justify=tk.RIGHT)
+input_field.grid(row=0, column=0)
+input_field.pack(ipady=10)
+
+win.mainloop()
